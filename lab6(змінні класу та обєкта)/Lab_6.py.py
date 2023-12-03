@@ -1,7 +1,7 @@
 class MyTetsClass:
 
     num_of_users = 0
-    age_in_2016 = -5
+    age_in_2016 = -7
 
     def __init__(self, name, age):
         self.name = name
@@ -25,5 +25,5 @@ info.what_age_in_2016()
 info1.what_age_in_2016()
 info2.what_age_in_2016()
 
-print('Лічильник обєктів = ' + str(MyTetsClass.num_of_users))
+print('Г‹ВіГ·ГЁГ«ГјГ­ГЁГЄ Г®ГЎВєГЄГІВіГў = ' + str(MyTetsClass.num_of_users))
 
