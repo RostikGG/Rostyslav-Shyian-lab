@@ -3,7 +3,7 @@ import datetime
 
 class MyTetsClass:
     num_of_users = 0
-    age_in_2016 = -5
+    age_in_2016 = -7
     defoult_age = 20
 
     def __init__(self, name, age, nation):
@@ -33,13 +33,13 @@ class MyTetsClass:
     @staticmethod
     def with_day(day):
         if day.weekday() == 5:
-            print("Вихідний день!!! - Субота")
+            print("Г‚ГЁГµВіГ¤Г­ГЁГ© Г¤ГҐГ­Гј!!! - Г‘ГіГЎГ®ГІГ ")
             return False
         elif day.weekday() == 6:
-            print("Вихідний день!!! - Неділя")
+            print("Г‚ГЁГµВіГ¤Г­ГЁГ© Г¤ГҐГ­Гј!!! - ГЌГҐГ¤ВіГ«Гї")
             return False
         else:
-            print("Будній день")
+            print("ГЃГіГ¤Г­ВіГ© Г¤ГҐГ­Гј")
             return True
 
 info = MyTetsClass("Rostyslav", 20, "ua")
@@ -54,13 +54,13 @@ MyTetsClass.what_age_in_2016(info)
 MyTetsClass.what_age_in_2016(info1)
 MyTetsClass.what_age_in_2016(info2)
 
-print('Лічильник обєктів = ' + str(MyTetsClass.num_of_users))
+print('Г‹ВіГ·ГЁГ«ГјГ­ГЁГЄ Г®ГЎВєГЄГІВіГў = ' + str(MyTetsClass.num_of_users))
 
-print("Початкове значення defoult_age:", MyTetsClass.defoult_age)
+print("ГЏГ®Г·Г ГІГЄГ®ГўГҐ Г§Г­Г Г·ГҐГ­Г­Гї defoult_age:", MyTetsClass.defoult_age)
 MyTetsClass.plus_input_years(30)
-print("Нове значення defoult_age:", MyTetsClass.defoult_age)
+print("ГЌГ®ГўГҐ Г§Г­Г Г·ГҐГ­Г­Гї defoult_age:", MyTetsClass.defoult_age)
 
-# Спліт/створення нового обекта через classmethod
+# Г‘ГЇГ«ВіГІ/Г±ГІГўГ®Г°ГҐГ­Г­Гї Г­Г®ГўГ®ГЈГ® Г®ГЎГҐГЄГІГ  Г·ГҐГ°ГҐГ§ classmethod
 user_1 = "Alla/31/ua"
 user_2 = "John/18/bl"
 
@@ -69,6 +69,6 @@ new_user2 = MyTetsClass.new_user(user_2)
 print(new_user1.fullinfo)
 print(new_user2.fullinfo)
 
-# Cтатичний метод
+# CГІГ ГІГЁГ·Г­ГЁГ© Г¬ГҐГІГ®Г¤
 date = datetime.date(2001, 9, 15)
 MyTetsClass.with_day(date)
