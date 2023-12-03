@@ -26,7 +26,7 @@ class MyClass:
         self.secnd = None
 
 
-user1 = MyClass("Rostyslav", "Shyian", 29)
+user1 = MyClass("Rostyslav", "Shyian", 20)
 
 user1.secnd = "Shyian"
 
