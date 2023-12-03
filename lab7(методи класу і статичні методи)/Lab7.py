@@ -33,13 +33,13 @@ class MyTetsClass:
     @staticmethod
     def with_day(day):
         if day.weekday() == 5:
-            print("Âèõ³äíèé äåíü!!! - Ñóáîòà")
+            print("вихідний день - субота")
             return False
         elif day.weekday() == 6:
-            print("Âèõ³äíèé äåíü!!! - Íåä³ëÿ")
+            print("вихідний день!!! - неділя")
             return False
         else:
-            print("Áóäí³é äåíü")
+            print("будній день")
             return True
 
 info = MyTetsClass("Rostyslav", 20, "ua")
@@ -54,13 +54,13 @@ MyTetsClass.what_age_in_2016(info)
 MyTetsClass.what_age_in_2016(info1)
 MyTetsClass.what_age_in_2016(info2)
 
-print('Ë³÷èëüíèê îáºêò³â = ' + str(MyTetsClass.num_of_users))
+print('лічильник обєктів = ' + str(MyTetsClass.num_of_users))
 
-print("Ïî÷àòêîâå çíà÷åííÿ defoult_age:", MyTetsClass.defoult_age)
+print("початкове значення defoult_age:", MyTetsClass.defoult_age)
 MyTetsClass.plus_input_years(30)
-print("Íîâå çíà÷åííÿ defoult_age:", MyTetsClass.defoult_age)
+print("нове значення defoult_age:", MyTetsClass.defoult_age)
 
-# Ñïë³ò/ñòâîðåííÿ íîâîãî îáåêòà ÷åðåç classmethod
+# Спліт/створення нового обекта чере classmethod
 user_1 = "Alla/31/ua"
 user_2 = "John/18/bl"
 
@@ -69,6 +69,6 @@ new_user2 = MyTetsClass.new_user(user_2)
 print(new_user1.fullinfo)
 print(new_user2.fullinfo)
 
-# Còàòè÷íèé ìåòîä
+# Cтатичний метод
 date = datetime.date(2001, 9, 15)
 MyTetsClass.with_day(date)
